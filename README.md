@@ -1,7 +1,7 @@
 # 3D Drift Game
 Tenacious drift 3D
 
-Welcome to my drifting game project! This project is a result of my exploration into game development and serves as a demonstration of my growing skills in programming. While I acknowledge that the project may not meet my highest standards or adhere to best coding practices, it represents a significant learning journey for me.
+This project is a result of my continued exploration into game development and serves as a demonstration of my growing skills. Whils't I acknowledge that the project may not meet my highest standards or adhere to best coding practices, it's main purpose is to be a documented learning journey for me.
 
 ---
 
