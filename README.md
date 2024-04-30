@@ -5,7 +5,7 @@ This project was ported from the 2D version: [Drift Game 2D](https://github.com/
 
 ---
 
-## Why I Created This Project
+## Why I Created This Project:
 
 Tenacious Drift 3D and 2D has been a learning experience, improving my game development skills:
 
@@ -15,39 +15,37 @@ Tenacious Drift 3D and 2D has been a learning experience, improving my game deve
 - **Version Control**: Managing the project with Git and GitHub.
 
 
-## Gameplay Overview
-
-The game's main scenes are:
+## Gameplay Overview:
 
 - **Login Scene**: Connect to high scores or play in offline mode.
 - **Menu Scene**: Choose maps, cars, settings, etc.
 - **Race Scene**: Race around the map trying to get a high drift-score, lap-time, or combo time.
-- **Post-Game Scene**: Display and update highscores up current map.
+- **Post-Game Scene**: Display and update highscores on the current map.
 
 ---
 
-## Video of Gameplay
+## Video of Gameplay:
 
 [![Video Title](ReadMeImages/Thumbnail2.png)](https://www.youtube.com/watch?v=mMqFDnPowNg)
 
 ---
 
-## Credits & Software
+## Credits & Software:
 
- - **Music/Sound**: All music was created by Mark Lee | [Youtube](https://www.youtube.com/@Markjameslee) | [SoundCloud](https://soundcloud.com/charkmomiak) 
+ - **Music/Sound**: All music was created by Mark Lee | [Youtube](https://www.youtube.com/@Markjameslee) | [SoundCloud](https://soundcloud.com/charkmomiak) |
  - **Engine**: Unity - Version: 2022.3.20f1
  - **IDE**: Visual Studio 2022 
 
 ---
 
-## Acknowledging Areas for Improvement
+## Acknowledging Areas for Improvement:
 
 - **Coding Practices**: Consistency of style, proper encapsulation, Rhobustness.
 - **Game Design**: Scope managment, Consistency of vision
 - **Version Control**: Commiting more frequently, Making new branches for changes. 
 
 
-## If I Continued
+## If I Continued:
 
 I will now be moving onto new projects.<br>
 These are some thigs that I would add if I were to continue with this project:
@@ -59,7 +57,7 @@ These are some thigs that I would add if I were to continue with this project:
 
 --- 
 
-## Dependencies
+## Dependencies:
 
 This project relies on [Drift Game Highscores](https://github.com/AsteaFrostweb/2DDriftGameHighscores) for Highscore functionality.
 
