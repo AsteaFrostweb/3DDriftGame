@@ -1,18 +1,9 @@
 # Tenacious Drift 3D: A Drifting Game Project
 
-Welcome to Tenacious Drift 3D, a project showcasing my growing skills in game development.
+Welcome to Tenacious Drift 3D, a project showcasing my growing skills in game development.<br>
 This project was ported from the 2D version of this game: [Drift Game 2D](https://github.com/AsteaFrostweb/2DDriftGame).
 
 ---
-
-## Features
-
-- **Login and High Scores**: Connect to the game's MVC application to access high scores and track your progress.
-- **Menu Screen**: Choose from available maps and cars (currently featuring one map).
-- **Gameplay**: Experience drifting on challenging courses with features such as drifts, drift scores, lap tracking (including checkpoints and nodes), basic sound effects, and camera tracking/smoothing.
-- **Post-Game Score Submission**: Share your achievements by submitting your score to the high scores if it surpasses your current record.
-- **High Scores Web Application**: Compete with others and monitor your progress using the integrated high scores web app.
-
 
 ## Why I Created These Projects
 
@@ -37,7 +28,7 @@ The game's main scenes are:
 
 ## Video of Gameplay
 
-[![Video Title](ReadMeImages/Thumbnail2.png)](https://www.youtube.com/watch?v=mMqFDnPowNg){:target="_blank"}
+[![Video Title](ReadMeImages/Thumbnail2.png)](https://www.youtube.com/watch?v=mMqFDnPowNg)
 
 ---
 
@@ -58,7 +49,7 @@ The game's main scenes are:
 
 ## If I Continued
 
-I will now be moving onto new projects.
+I will now be moving onto new projects.<br>
 These are some thigs that I would add if I were to continue with this project:
 
 - **Add 3 More Maps**
