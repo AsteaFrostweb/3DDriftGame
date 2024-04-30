@@ -1,6 +1,6 @@
 # Tenacious Drift 3D: A Drifting Game Project
 
-Welcome to Tenacious Drift 3D, a project showcasing my skills in game development.
+Welcome to Tenacious Drift 3D, a project showcasing my growing skills in game development.
 
 ---
 ## Dependencies
@@ -44,8 +44,9 @@ The game's main scenes are:
 ## Embedded Video
 
 See the gameplay in action:
+[![Video Title](https://img.youtube.com/vi/mMqFDnPowNg/0.jpg)](https://www.youtube.com/watch?v=mMqFDnPowNg)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mMqFDnPowNg?si=4OIThAaN8WI6iJ7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ---
 
 ## Acknowledging Areas for Improvement
