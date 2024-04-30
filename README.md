@@ -41,10 +41,9 @@ The game's main scenes are:
 
 ---
 
-## Embedded Video
+## Video of Gameplay
 
-See the gameplay in action:
-[![Video Title](https://img.youtube.com/vi/mMqFDnPowNg/0.jpg)](https://www.youtube.com/watch?v=mMqFDnPowNg)
+[![Video Title](ReadMeImages/Thumbnail.png)](https://www.youtube.com/watch?v=mMqFDnPowNg)
 
 
 ---
