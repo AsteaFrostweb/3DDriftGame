@@ -17,6 +17,7 @@ namespace Car
     {
         public GameObject model;
         public WheelCollider collider;
+        public TrailRenderer trailRenderer;
         public Axel axel;
     }
 }
@@ -102,10 +103,13 @@ public class CarController : MonoBehaviour
 
 
     private Vector3 positionLastFrame;
+
+    private DriftScoreHandler dsh;
     public bool ControlLocked { get; set; } = true;
 
     private void Start()
     {
+        dsh = GetComponent<DriftScoreHandler>();
         positionLastFrame = transform.position;
         Physics.gravity = new Vector3(0f,gravityScale, 0f);
 
@@ -129,8 +133,9 @@ public class CarController : MonoBehaviour
     private void Update()
     {      
         GetInput();
-        GetEvents(); 
         UpdateOuputs();
+
+        GetEvents();        
         AnimateWheels();
     }   
 
@@ -139,6 +144,11 @@ public class CarController : MonoBehaviour
         Brake();
         Move();
         Steer();
+    }
+
+    public List<Car.Wheel> GetWheels() 
+    {
+        return wheels;
     }
 
     private void GetInput()
@@ -156,7 +166,7 @@ public class CarController : MonoBehaviour
         currentDriftAngle = GetDriftAngle();
         currentSteeringAngle = wheels.First(w => w.axel == Axel.Front).collider.steerAngle;    
         isMoving = carRB.velocity.magnitude >= movingSpeedThreshold;
-        isDrifting = (currentDriftAngle >= driftAngleThreshold) && isMoving;
+        isDrifting = !dsh.crashed && ((currentDriftAngle >= driftAngleThreshold) && isMoving) || (isDrifting && isMoving && (currentDriftAngle >= driftAngleThreshold * 0.75f));
 
         positionLastFrame = transform.position;
     }

@@ -76,7 +76,7 @@ public class DriftScoreHandler : MonoBehaviour
     public float crash_no_drift_time = 2f;
     public float drift_multiplier_time = 1f;
 
-    private DateTime previous_drift_end;
+    public DateTime previous_drift_end;
     private DateTime previous_crash_time;
     private bool was_drifting = false;
    
@@ -90,8 +90,8 @@ public class DriftScoreHandler : MonoBehaviour
     void Start()
     {
         all_combos = new List<DriftCombo>();
-        player_car = GetComponent<CarController>();
-        player_car.OnCrash += () => OnCrash();
+       
+    
 
         previous_drift_end = DateTime.Now.AddSeconds(-drift_multiplier_time);
         previous_crash_time = DateTime.Now.AddSeconds(crash_no_drift_time);
@@ -100,71 +100,83 @@ public class DriftScoreHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (player_car == null) 
+        {
+            player_car = GetComponent<CarController>();
+            if (player_car != null)
+            {
+                player_car.OnCrash += () => OnCrash();
+                player_car.OnDriftStart += () => OnDriftStart();
+                player_car.OnDriftEnd += () => OnDriftEnd();
+            }
+            else {Debugging.Log("Unable to locate palyer car in score handler."); return; }            
+        }
+        
+
         if (crashed) 
         {
-            if (DateTime.Now.Subtract(previous_crash_time).Seconds >= crash_no_drift_time)
+            if (DateTime.Now.Subtract(previous_crash_time).TotalSeconds >= crash_no_drift_time)
             {
                 crashed = false; 
                 //if its been "crash_no_drift_time" since we last crashed in a combo then crasehd = fasle;
             }
-        }
-       
+        }       
 
 
         if (player_car.IsDrifting)
-        {
-            if (!was_drifting)
-            {
-                //Runs on the first frame we ARE drifting
-                if (in_combo) //if we are in a combo
-                {
-                    current_combo.multiplier++;   
-                }
-                else if(!crashed)
-                {
-                    current_combo = new DriftCombo(DateTime.Now, DateTime.Now); //start new combo
-                    in_combo = true;
-                }
-
-                current_drift = new Drift(0);
-                was_drifting = true;
-                return;
-            }
-            //IF the player is drifting
-
+        { 
             current_combo_multiplier = current_combo.multiplier; //asiging inspector output variables
             current_drift_score = current_drift.score;
 
             float frame_score = drift_score_multiplier * current_combo.multiplier * (player_car.CurrentDriftAngle / 10) * Time.deltaTime;           
             current_drift.score += (int)frame_score;
-
         }
-        else  //IF PLAYER ISNT DRIFTING
-        {
-            if (was_drifting) 
-            {
-                //Debugging.Log("Eng of drift");
-                //Runs on the first frame we stop drifting 
-                previous_drift_end = DateTime.Now;
-
-                current_combo.AddDrift(current_drift);
-                current_drift = new Drift(0);              
-                
-                was_drifting = false;
-            }
+        else  
+        {         
             if (in_combo)
             {            
-                if (DateTime.Now.Subtract(previous_drift_end).Seconds >= drift_multiplier_time)
+                if (DateTime.Now.Subtract(previous_drift_end).TotalSeconds >= drift_multiplier_time)
                 {
                     EndComboSuccess();
                 }
             }
-
             //if the player isnt drifting
         }
 
         
 
+    }
+
+    private void OnDriftStart() 
+    {
+        //previous_drift_end = DateTime.MaxValue;
+        if (in_combo) //if we are in a combo
+        {
+            current_combo.multiplier++;
+        }
+        else if (!crashed)
+        {
+            Debugging.Log("starting new combo.");
+            current_combo = new DriftCombo(DateTime.Now, DateTime.Now); //start new combo
+            in_combo = true;
+        }
+
+        current_drift = new Drift(0);
+        was_drifting = true;
+        return;
+    }
+    private void OnDriftEnd() 
+    {
+        previous_drift_end = DateTime.Now;
+
+        if(in_combo) 
+        {
+            current_combo.AddDrift(current_drift);
+            current_drift = new Drift(0);
+        }
+   
+
+        was_drifting = false;
     }
 
     private void OnCrash() 
@@ -173,7 +185,8 @@ public class DriftScoreHandler : MonoBehaviour
         previous_crash_time = DateTime.Now;
       
         if (in_combo)
-        {            
+        {
+            Debugging.Log("ending current combo.");
             current_combo.crashed = true;
             in_combo = false;            
             all_combos.Add(current_combo);            
