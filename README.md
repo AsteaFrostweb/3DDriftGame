@@ -5,7 +5,8 @@ Welcome to Tenacious Drift 3D, a project showcasing my skills in game developmen
 ---
 ## Dependencies
 
-This project relies on [Drift_Game_Highscores](https://github.com/AsteaFrostweb/2DDriftGameHighscores) for Highscore functionality.
+This project relies on [Drift Game Highscores](https://github.com/AsteaFrostweb/2DDriftGameHighscores) for Highscore functionality.
+
 
 ## Features
 
@@ -22,27 +23,21 @@ This project relies on [Drift_Game_Highscores](https://github.com/AsteaFrostweb/
 
 Tenacious Drift 3D has been a learning experience, improving my game development skills:
 
-- **Logic & Design**: Problem-solving and player feedback understanding.
+- **Game Design** Design of systems, art, map creation.
 - **UI Development**: Crafting user-friendly interfaces.
-- **Networking with ASP.NET Core**: Implementing login and high scores.
+- **Networking with ASP.NET Core**: Learning about ASP.net core 8 MVC.
 - **Version Control**: Managing the project with Git and GitHub.
 
 ---
 
 ## Gameplay Overview
 
-Explore Tenacious Drift 3D:
+The game's main scenes are:
 
-- **Login Screen**: Connect to high scores.
-- **Menu Screen**: Choose maps and cars.
-- **Thrilling Drifts**: Master precision drifting.
-- **Post-Game Score Submission**: Share achievements.
-
----
-
-## High Scores Web Application
-
-Track progress and compete with others.
+- **Login Scene**: Connect to high scores or play in offline mode.
+- **Menu Scene**: Choose maps, cars, settings, etc.
+- **Race Scene**: Race around the map trying to get a high drift-score, lap-time, or combo time.
+- **Post-Game Scene**: Display and update highscores up current map.
 
 ---
 
@@ -50,8 +45,7 @@ Track progress and compete with others.
 
 See the gameplay in action:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mMqFDnPowNg?si=4OIThAaN8WI6iJ7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ---
 
 ## Acknowledging Areas for Improvement
