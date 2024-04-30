@@ -43,7 +43,7 @@ The game's main scenes are:
 
 ## Video of Gameplay
 
-[![Video Title](ReadMeImages/Thumbnail2.png)](https://www.youtube.com/watch?v=mMqFDnPowNg)
+[![Video Title](ReadMeImages/Thumbnail2.png)](https://www.youtube.com/watch?v=mMqFDnPowNg){:target="_blank"}
 
 
 ---
