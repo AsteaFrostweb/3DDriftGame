@@ -1,48 +1,54 @@
-# 3D Drift Game
-Tenacious drift 3D
+# Tenacious Drift 3D: A Drifting Game Project
 
-This project is a result of my continued exploration into game development and serves as a demonstration of my growing skills. Whils't I acknowledge that the project may not meet my highest standards or adhere to best coding practices, it's main purpose is to be a documented learning journey for me.
+Welcome to Tenacious Drift 3D, a project showcasing my skills in game development.
 
 ---
+## Dependencies
+
+This project relies on [Drift_Game_Highscores](https://github.com/AsteaFrostweb/2DDriftGameHighscores) for Highscore functionality.
 
 ## Features
 
-- **Basic Drifting Gameplay**: Experience the thrill of drifting through challenging courses.
-- **Simple Controls**: Easy-to-use controls make it accessible to players of all skill levels.
-- **Visual Feedback**: Visual cues and effects enhance the gaming experience.
+- **Login and High Scores**: Connect to the game's MVC application to access high scores and track your progress.
+- **Menu Screen**: Choose from available maps and cars (currently featuring one map).
+- **Gameplay**: Experience drifting on challenging courses with features such as drifts, drift scores, lap tracking (including checkpoints and nodes), basic sound effects, and camera tracking/smoothing.
+- **Post-Game Score Submission**: Share your achievements by submitting your score to the high scores if it surpasses your current record.
+- **High Scores Web Application**: Compete with others and monitor your progress using the integrated high scores web app.
+
 
 ---
 
 ## Why I Created This Project
 
-Although I recognize that this project may not be perfect, it has provided me with invaluable learning opportunities. Through this project, I've honed my skills in game development, including:
+Tenacious Drift 3D has been a learning experience, improving my game development skills:
 
-- **Programming Logic**: Implementing game mechanics required thoughtful problem-solving and logic.
-- **Game Design Considerations**: Designing engaging gameplay experiences taught me the importance of player feedback and balancing.
-- **Version Control with Git**: Managing the project using Git and GitHub taught me the importance of collaboration and version control in software development.
+- **Logic & Design**: Problem-solving and player feedback understanding.
+- **UI Development**: Crafting user-friendly interfaces.
+- **Networking with ASP.NET Core**: Implementing login and high scores.
+- **Version Control**: Managing the project with Git and GitHub.
 
 ---
 
 ## Gameplay Overview
 
-The game features:
+Explore Tenacious Drift 3D:
 
-- **Login Screen**: Connects to an MVC application handling high scores.
-- **Menu Screen**: Options to select maps and cars (currently only 1 map built).
-- **Gameplay**: Drifts, drift scores, lap tracking (checkpoints, nodes, etc.), basic sound effects, camera tracking/smoothing.
-- **Post-Game Screen**: Posts your score to the high scores if it beats your current score.
+- **Login Screen**: Connect to high scores.
+- **Menu Screen**: Choose maps and cars.
+- **Thrilling Drifts**: Master precision drifting.
+- **Post-Game Score Submission**: Share achievements.
 
 ---
 
 ## High Scores Web Application
 
-The high scores web app is also a part of this project, allowing players to track their progress and compete with others.
+Track progress and compete with others.
 
 ---
 
 ## Embedded Video
 
-Here's a brief demonstration of the gameplay:
+See the gameplay in action:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -50,15 +56,15 @@ Here's a brief demonstration of the gameplay:
 
 ## Acknowledging Areas for Improvement
 
-While I'm proud of what I've accomplished with this project, I also acknowledge its limitations:
+Recognizing limitations:
 
-- **Coding Practices**: The project may lack cohesion in terms of coding practices, reflecting my ongoing journey to improve my skills.
-- **Originality**: While the game demonstrates fundamental gameplay mechanics, it does not introduce any innovations in the gaming industry.
+- **Coding Practices**: Working to improve cohesion.
+- **Originality**: Seeking innovation.
 
 ---
 
 ## Moving Forward
 
-Despite its imperfections, I view this project as a stepping stone toward my next endeavors in game development. By reflecting on what I've learned and identifying areas for improvement, I'm ready to tackle new challenges and continue growing as a developer.
+Tenacious Drift 3D is a step in my game development journey. Feedback is appreciated.
 
-Thank you for taking the time to explore my drifting game project. Your feedback and suggestions are always welcome as I strive to improve and evolve as a developer.
+Thank you for exploring Tenacious Drift 3D.
