@@ -3,7 +3,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering.UI;
 
 public class DriftUIHandler : MonoBehaviour
 {
@@ -44,12 +46,17 @@ public class DriftUIHandler : MonoBehaviour
             if (controller != null)
             {
                 drift_handler = controller.gameObject.GetComponent<DriftScoreHandler>();
+                controller.OnBrakeStart += () => OnBrakeStart();
+                controller.OnBrakeEnd += () => OnBrakeEnd();
                 controller.OnDriftStart += () => OnDriftStart();
                 controller.OnDriftEnd += () => OnDriftEnd();
             }
             Debugging.Log("Returning from DriftungUI as no handler or scoretmp found.");
             return;
-        }
+        }  
+
+
+
 
 
         if (drift_handler.in_combo)
@@ -79,17 +86,38 @@ public class DriftUIHandler : MonoBehaviour
         total_drift_score_tmp.text = "Total Score: " + Mathf.Round(drift_handler.current_total_drift_score);
     }
 
+
+    private void OnBrakeStart()
+    {
+        foreach (Wheel w in controller.GetWheels())
+        {
+            
+            w.trailRenderer.emitting = true;
+            
+        }
+    }
+    private void OnBrakeEnd()
+    {
+        OnDriftEnd();
+    }
+
+
+
+
     private void OnDriftStart() 
     {
-        Debugging.Log("OnDriftStart");
+       
         foreach (Wheel w in controller.GetWheels()) 
         {
-            w.trailRenderer.emitting = true;
+            if (w.axel == Axel.Rear)
+            {
+                w.trailRenderer.emitting = true;
+            }
         }
     }
     private void OnDriftEnd()
     {
-        Debugging.Log("OnDriftnend");
+        
         foreach (Wheel w in controller.GetWheels())
         {
             w.trailRenderer.emitting = false;
