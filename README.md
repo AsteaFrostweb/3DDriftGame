@@ -34,7 +34,7 @@ The game's main scenes are:
 
 ## Credits & Software
 
- - **Music/Sound**: All music was created by Mark Lee: [Youtube](https://www.youtube.com/@Markjameslee)  [SoundCloud](https://soundcloud.com/charkmomiak) 
+ - **Music/Sound**: All music was created by Mark Lee | [Youtube](https://www.youtube.com/@Markjameslee) | [SoundCloud](https://soundcloud.com/charkmomiak) 
  - **Engine**: Unity - Version: 2022.3.20f1
  - **IDE**: Visual Studio 2022 
 
