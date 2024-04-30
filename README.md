@@ -1,12 +1,9 @@
 # Tenacious Drift 3D: A Drifting Game Project
 
 Welcome to Tenacious Drift 3D, a project showcasing my growing skills in game development.
+This project was ported from the 2D version of this game: [Drift Game 2D](https://github.com/AsteaFrostweb/2DDriftGame).
 
 ---
-## Dependencies
-
-This project relies on [Drift Game Highscores](https://github.com/AsteaFrostweb/2DDriftGameHighscores) for Highscore functionality.
-
 
 ## Features
 
@@ -17,18 +14,15 @@ This project relies on [Drift Game Highscores](https://github.com/AsteaFrostweb/
 - **High Scores Web Application**: Compete with others and monitor your progress using the integrated high scores web app.
 
 
----
+## Why I Created These Projects
 
-## Why I Created This Project
-
-Tenacious Drift 3D has been a learning experience, improving my game development skills:
+Tenacious Drift 3D and 2D has been a learning experience, improving my game development skills:
 
 - **Game Design** Design of systems, art, map creation.
 - **UI Development**: Crafting user-friendly interfaces.
 - **Networking with ASP.NET Core**: Learning about ASP.net core 8 MVC.
 - **Version Control**: Managing the project with Git and GitHub.
 
----
 
 ## Gameplay Overview
 
@@ -47,17 +41,34 @@ The game's main scenes are:
 
 ---
 
-## Acknowledging Areas for Improvement
+## Credits & Software
 
-These are the things I recognized that i need:
-
-- **Coding Practices**: Working to improve cohesion.
-- **Originality**: Seeking innovation.
+ - **Music/Sound**: All music was created by Mark Lee: [Youtube](https://www.youtube.com/@Markjameslee)  [SoundCloud](https://soundcloud.com/charkmomiak) 
+ - **Engine**: Unity - Version: 2022.3.20f1
+ - **IDE**: Visual Studio 2022 
 
 ---
 
-## Moving Forward
+## Acknowledging Areas for Improvement
 
-Tenacious Drift 3D is a step in my game development journey. Feedback is appreciated.
+- **Coding Practices**: Consistency of style, proper encapsulation, Rhobustness.
+- **Game Design**: Scope managment, Consistency of vision
+- **Version Control**: Commiting more frequently, Making new branches for changes. 
 
-Thank you for exploring Tenacious Drift 3D.
+
+## If I Continued
+
+I will now be moving onto new projects.
+These are some thigs that I would add if I were to continue with this project:
+
+- **Add 3 More Maps**
+- **Add Credits Screen**
+- **Add Settings Screen**
+- **Improve Race Scene Decoration**
+
+--- 
+
+## Dependencies
+
+This project relies on [Drift Game Highscores](https://github.com/AsteaFrostweb/2DDriftGameHighscores) for Highscore functionality.
+
