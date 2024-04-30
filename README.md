@@ -1,4 +1,4 @@
-# Tenacious Drift 3D: A Drifting Game Project
+# Tenacious Drift 3D
 
 Welcome to Tenacious Drift 3D, a project showcasing my growing skills in game development.<br>
 This project was ported from the 2D version: [Drift Game 2D](https://github.com/AsteaFrostweb/2DDriftGame).
